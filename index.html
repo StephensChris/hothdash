@@ -20,15 +20,15 @@
         <div id="document-blocker"></div>
 
         
-        <div id="new-entry-form-cont">
+        <div id="new-entry-form-cont" class="new-entry-form-cont">
 
             
             <!-- New Walk In Form -->
-            <div id="new-entry-form-panel">
+            <div id="new-walkin-form-panel" class="new-form-panel">
 
-                <div id="new-entry-form">
+                <div id="new-walkin-form" class="new-form-header">
                     <h4>New Walk In</h4>
-                    <img id="new-entry-form-exit" src="media/icons/exit.png" alt="exit button" role="button">
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
                 </div>
 
                 <!-- <form id="form-parent" action="" class="m-5">
@@ -77,11 +77,11 @@
             </div>
 
             
-            <div id="new-entry-form-panel">
+            <div id="new-lead-form-panel" class="new-form-panel">
 
-                <div id="new-entry-form">
-                    <h4>New Walk In</h4>
-                    <img id="new-entry-form-exit" src="media/icons/exit.png" alt="exit button" role="button">
+                <div id="new-lead-form" class="new-form-header">
+                    <h4>New Lead</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
                 </div>
 
                 <!-- <form id="form-parent" action="" class="m-5">
@@ -129,22 +129,51 @@
 
             </div>
 
-            <!-- New Lead Form -->
 
+            <div id="new-customer-form-panel" class="new-form-panel">
 
-            <!-- New Customer Form -->
+                <div id="new-customer-form" class="new-form-header">
+                    <h4>New Customer</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
+                </div>
 
+            </div>
 
-            <!-- New Project Form -->
+            <div id="new-project-form-panel" class="new-form-panel">
 
+                <div id="new-project-form" class="new-form-header">
+                    <h4>New Project</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
+                </div>
 
-            <!-- New Delivery Form -->
+            </div>
 
+            <div id="new-delivery-form-panel" class="new-form-panel">
 
-            <!-- New Warranty Form -->
+                <div id="new-delivery-form" class="new-form-header">
+                    <h4>New Delivery</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
+                </div>
 
+            </div>
 
-            <!-- New Payment Form -->
+            <div id="new-warranty-form-panel" class="new-form-panel">
+
+                <div id="new-warranty-form" class="new-form-header">
+                    <h4>New Warranty</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
+                </div>
+
+            </div>
+
+            <div id="new-payment-form-panel" class="new-form-panel">
+
+                <div id="new-payment-form" class="new-form-header">
+                    <h4>New Payment</h4>
+                    <img class="new-entry-exit-btn" onclick="closeNewEntryForm()" src="media/icons/exit.png" alt="exit button" role="button">
+                </div>
+
+            </div>
 
 
         </div>
@@ -225,14 +254,14 @@
                                 <div class="dropdown-center">
                                     <a 
                                         href="media/icons/hq.png" 
-                                     
+                                        
                                         class="dropdown-btn" 
                                         role="button" 
-                                        data-bs-offset="-92,21" 
+                                        data-bs-offset="-89,20" 
                                         data-bs-toggle="dropdown" 
                                         aria-expanded="false">
                                         <span>
-                                            <button id="new-entry-btn" onclisck="toggleNewEntryForm()">New</button>
+                                            <button id="new-entry-btn">New</button>
                                         </span> 
                                     </a>
                                     <ul id="state-sig-options" class="dropdown-menu">
