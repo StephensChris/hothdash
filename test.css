@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+}
+
+#outer {
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner {
+    background: red;
+    height: 60%;
+    width:60%;
+}
