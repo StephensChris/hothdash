@@ -16,16 +16,19 @@ function toggleSearchBarPlaceholder() {
 
 
 
-const newEntryFormPanel = document.getElementById('new-entry-form-panel');
+const newEntryFormPanel = document.querySelector('#new-entry-form-panel');
 
-let newEntryFormHidden = true;
+// let newEntryFormHidden = true;
 
 // This will open the "new entry" form when clicking the "new" button
 function toggleNewEntryForm() {
   if (newEntryFormHidden) {
-    document.getElementById("new-entry-form-panel").style.display = "block";
-    document.getElementById("document-blocker").style.zIndex = "1";
-    document.getElementById("document-blocker").style.opacity = ".1";
+    // if (event.target == document.querySelector("#lead-btn")) {
+      document.querySelector("#new-entry-form-panel").style.display = "block";
+      
+    // }
+    document.querySelector("#document-blocker").style.zIndex = "1";
+    document.querySelector("#document-blocker").style.opacity = ".1";
     newEntryFormHidden = false;
   } 
 }
@@ -34,25 +37,25 @@ function toggleNewEntryForm() {
 function hideNewEntryForm() {
   window.addEventListener('mouseup',function(event){
     if(
-      event.target != newEntryFormPanel 
+      event.target != document.querySelector('#new-entry-form-panel') 
 
-      && event.target.parentNode != newEntryFormPanel
+      && event.target.parentNode != document.querySelector('#new-entry-form-panel')
       && event.target.parentNode != document.querySelector('#new-entry-form')
       
-      && event.target.parentNode != document.querySelector('#form-parent')
-      && event.target.parentNode != document.querySelector("#form-parent-name")
-      && event.target.parentNode != document.querySelector("#form-parent-pnum")
-      && event.target.parentNode != document.querySelector("#form-parent-type")
-      && event.target.parentNode != document.querySelector("#form-parent-type-options")
-      && event.target.parentNode != document.querySelector("#form-parent-address")
-      && event.target.parentNode != document.querySelector("#form-parent-city")
-      && event.target.parentNode != document.querySelector("#form-parent-zip")
-      && event.target.parentNode != document.querySelector("#form-parent-state")
+      // && event.target.parentNode != document.querySelector('#form-parent')
+      // && event.target.parentNode != document.querySelector("#form-parent-name")
+      // && event.target.parentNode != document.querySelector("#form-parent-pnum")
+      // && event.target.parentNode != document.querySelector("#form-parent-type")
+      // && event.target.parentNode != document.querySelector("#form-parent-type-options")
+      // && event.target.parentNode != document.querySelector("#form-parent-address")
+      // && event.target.parentNode != document.querySelector("#form-parent-city")
+      // && event.target.parentNode != document.querySelector("#form-parent-zip")
+      // && event.target.parentNode != document.querySelector("#form-parent-state")
 
       || event.target == document.getElementById('new-entry-form-exit') 
     )
     { 
-      newEntryFormPanel.style.display = 'none'; 
+      document.querySelector('#new-entry-form-panel').style.display = 'none'; 
       document.getElementById("document-blocker").style.zIndex = "0";
       document.getElementById("document-blocker").style.opacity = "0";
       newEntryFormHidden = true;

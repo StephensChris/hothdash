@@ -1,0 +1,51 @@
+<div id="new-entry-form-panel">
+
+    <div id="new-entry-form">
+        <h4>New Walk In</h4>
+        <img id="new-entry-form-exit" src="media/icons/exit.png" alt="exit button" role="button">
+    </div>
+
+    <form id="form-parent" action="" class="m-5">
+        <div class="row">
+            <div id="form-parent-name" class="col-4 my-2">
+                <input id="input-name" class="form-control" type="text" placeholder="Name" >
+            </div>
+
+            <div id="form-parent-pnum" class="col-4 my-2">
+                <input id="input-pnum" class="form-control" type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="10" maxlength="10">
+            </div>
+
+            <div id="form-parent-address" class="col-5 my-2">
+                <input id="input-address" class="form-control" type="text" placeholder="Address">
+            </div>
+
+            <div id="form-parent-city" class="col-3 my-2">
+                <input id="input-city" class="form-control" type="text" placeholder="City">
+            </div>
+
+            <div id="form-parent-state" class="col-2 my-2">
+                <input id="" class="form-control" type="text" list="datalistOptions" placeholder="State">
+                <datalist id="datalistOptions">
+                    <option selected value=     "Oregon">
+                    <option value=              "California">
+                    <option value=              "Washington">
+                    <option value=              "Idaho">
+                    <option value=              "Nevada">
+                </datalist>
+            </div>
+
+            <div id="form-parent-zip" class="col-2 my-2">
+                <input id="input-zip" class="form-control" type="text" placeholder="ZIP">
+            </div>
+
+            <div id="form-parent-notes" class="col-12 my-2">
+                <textarea id="input-notes" class="form-control" rows="5" placeholder="Notes"></textarea>
+            </div>
+            
+            <div class="text-end mt-2">
+                <button id="new-entry-submit-btn" type="submit" class="">Submit</button>
+            </div>
+        </div>
+    </form>
+
+</div>
